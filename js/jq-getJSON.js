@@ -26,9 +26,9 @@ function loadOrders() {
     msg += '</form>' + '<br>';
     
     msg += '<br>Last update: ' + hrs + ':' + mins + '<br>';
-    msg += '<p id="info">Total bill: ' + data.total + ' DKK' + '</p>';
-    msg += '<p id="info">Splitted bill: ' + data.splitted + ' DKK' + '</p>';
-    msg += '<p id="info">Payers: ' + data.payers + '</p>';
+    msg += '<br>Total bill: ' + data.total + ' DKK' + '<br>';
+    msg += '<br>Splitted bill: ' + data.splitted + ' DKK' + '<br>';
+    msg += '<br>Payers: ' + data.payers + '<br>';
     
     $('#rates').html(msg); 
 
@@ -65,9 +65,9 @@ function loadCheckout() {
     msg += '</form>' + '<br>';
     
     msg += '<br>Last update: ' + hrs + ':' + mins + '<br>';
-    msg += '<p id="info">Total bill: ' + data.total + ' DKK' + '</p>';
-    msg += '<p id="info">Splitted bill: ' + data.splitted + ' DKK' + '</p>';
-    msg += '<p id="info">Payers: ' + data.payers + '</p>';
+    msg += '<br>Total bill: ' + data.total + ' DKK' + '<br>';
+    msg += '<br>Splitted bill: ' + data.splitted + ' DKK' + '<br>';
+    msg += '<br>Payers: ' + data.payers + '<br>';
     
     $('#rates').html(msg); 
 

@@ -9,7 +9,7 @@ function __construct($name, $price, $quantity){
 
     $name_error = $this->set_beer($name) == TRUE ? 'TRUE,' : 'FALSE,';
     $price_error = $this->set_price($price) == TRUE ? 'TRUE,' : 'FALSE,';
-    $quantity_error = $this->set_quantity($quantity) == TRUE ? 'TRUE,' : 'FALSE,';
+    $quantity_error = $this->set_quantity($quantity) == TRUE ? 'TRUE' : 'FALSE';
 
     $this->error_message = $name_error. $price_error . $quantity_error;
 }
@@ -38,7 +38,7 @@ function set_price($value){
 function set_quantity($value){
 
     $error_message = TRUE;
-    (ctype_digit($value)) ? $this->quantity = $value : $this->error_message = FALSE;
+    (strlen($value) > 0) ? $this->quantity = $value : $this->error_message = FALSE;
     return $this->error_message;
 }
 

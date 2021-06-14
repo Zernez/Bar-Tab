@@ -8,7 +8,6 @@ $data_p = array();
 $data_q = array();
 $end= false;
 $sum_checkout = 0;
-$sum_splitted = 0;
 $payers = 1;
 $data_ready = false;
 $ref = "";
