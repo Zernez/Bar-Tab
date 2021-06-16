@@ -17,7 +17,7 @@ class interfacesTest extends TestCase{
 
         //added 1 mock order with 1 "mock IPA" at 10DKK for a total of 89 DKK 
         
-        $this -> assertEquals(69, $interface -> order_checkout());
+        $this -> assertEquals(89, $interface -> order_checkout());
         
         $this -> assertEquals('Beer', $ref);
 
@@ -33,7 +33,7 @@ class interfacesTest extends TestCase{
                        
         $rec= $interface -> order_recorder($order);
 
-        //added 1 more mock order with 1 "mock IPA" at 10DKK for a total of 79 DKK  
+        //added 1 more mock order with 1 "mock IPA" at 10DKK for a total of 99 DKK  
         
         $this -> assertEquals(TRUE, $rec);
 
